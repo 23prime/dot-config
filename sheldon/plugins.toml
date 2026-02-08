@@ -12,8 +12,6 @@
 
 shell = "zsh"
 
-[plugins]
-
 [plugins.zsh-completions]
 github = "zsh-users/zsh-completions"
 
