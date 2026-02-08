@@ -1,6 +1,6 @@
-# Zellij config
+# dot config
 
-My Zellij configurations.
+My configurations at `~/.config`.
 
 ## Usage
 

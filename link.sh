@@ -2,12 +2,12 @@
 set -euo pipefail
 
 # ========================================
-# Zellij Config Symlink Manager
+# Config Symlink Manager
 # ========================================
 
 # Configuration
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-TARGET_DIR="${HOME}/.config/zellij"
+TARGET_DIR="${HOME}/.config"
 DRY_RUN="${DRY_RUN:-false}"
 VERBOSE="${VERBOSE:-true}"
 
@@ -79,7 +79,7 @@ create_symlink() {
 }
 
 link_configs() {
-    log_info "Linking zellij configs from $SCRIPT_DIR to $TARGET_DIR"
+    log_info "Linking configs from $SCRIPT_DIR to $TARGET_DIR"
 
     local count=0
     local failed=0
@@ -123,7 +123,7 @@ show_help() {
     cat << EOF
 Usage: $0 [OPTIONS]
 
-Link zellij config files from this repository to ~/.config/zellij/.
+Link config files from this repository to ~/.config/.
 
 OPTIONS:
     -d, --dry-run       Show what would be done without making changes
@@ -174,10 +174,10 @@ main() {
 
     # Run linking
     if link_configs; then
-        log_success "Zellij config linking completed successfully!"
+        log_success "Config linking completed successfully!"
         exit 0
     else
-        log_error "Zellij config linking completed with errors"
+        log_error "Config linking completed with errors"
         exit 1
     fi
 }
