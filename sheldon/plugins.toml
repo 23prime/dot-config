@@ -23,3 +23,6 @@ github = "zsh-users/zsh-history-substring-search"
 
 [plugins.zsh-syntax-highlighting]
 github = "zsh-users/zsh-syntax-highlighting"
+
+[plugins.fzf-tab]
+github = "Aloxaf/fzf-tab"
