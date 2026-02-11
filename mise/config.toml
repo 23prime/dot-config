@@ -1,0 +1,12 @@
+[tools]
+java = "openjdk-21"
+yarn = "latest"
+node = "24.2.0"
+terraform = "latest"
+go = "latest"
+watchexec = "latest"
+uv = "latest"
+biome = "latest"
+
+[settings]
+idiomatic_version_file_enable_tools = ["node"]
