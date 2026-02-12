@@ -8,10 +8,10 @@ layout {
             name "agent"
         }
         pane split_direction="horizontal" size="50%" {
-            pane {
+            pane size="40%" {
                 name "server"
             }
-            pane {
+            pane size="60%" {
                 name "user"
             }
         }
