@@ -1,12 +1,24 @@
+
+# ================================================================
+# Settings
+# ================================================================
+[settings]
+auto_install = false
+minimum_release_age = "3d"
+experimental = true
+
+
+# ================================================================
+# Tools
+# ================================================================
 [tools]
 java = "openjdk-21"
 yarn = "latest"
 node = "24.2.0"
-terraform = "latest"
 go = "latest"
 watchexec = "latest"
 uv = "latest"
 biome = "latest"
-
-[settings]
-idiomatic_version_file_enable_tools = ["node"]
+pinact = "latest"
+"github:k1LoW/mo" = "latest"
+ghq = "latest"
