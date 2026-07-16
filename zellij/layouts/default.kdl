@@ -4,10 +4,10 @@ layout {
     }
 
     pane split_direction="vertical" {
-        pane size="40%" {
+        pane size="55%" {
             name "agent"
         }
-        pane split_direction="horizontal" size="60%" {
+        pane split_direction="horizontal" size="45%" {
             pane size="30%" {
                 name "server"
             }
