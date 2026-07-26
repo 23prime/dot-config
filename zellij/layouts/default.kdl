@@ -8,10 +8,15 @@ layout {
             name "agent"
         }
         pane split_direction="horizontal" size="45%" {
-            pane size="30%" {
+            pane size="15%" {
+                name "git diff"
+                command "watch"
+                args "-n" "5" "git" "diff" "--stat"
+            }
+            pane size="25%" {
                 name "server"
             }
-            pane size="70%" {
+            pane size="60%" {
                 name "user"
             }
         }
